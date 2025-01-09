@@ -1,0 +1,43 @@
+<script>
+  import Sidebar from "../components/Sidebar.svelte";
+  import Header from "../components/Header.svelte";
+</script>
+
+<div class="layout">
+  <aside class="sidebar">
+    <Sidebar />
+  </aside>
+  <div class="content">
+    <Header />
+    <main class="main-content">
+      <slot />
+    </main>
+  </div>
+</div>
+
+<style lang="scss">
+  .layout {
+    display: flex;
+    height: 100vh; /* Бүх дэлгэцийн өндрийг эзэлнэ */
+  }
+
+  .sidebar {
+    width: 30%; /* Sidebar 30%-ийн өргөнтэй */
+    background-color: #27272a;
+  }
+
+  .content {
+    width: 70%; /* Content хэсэг 70%-ийн өргөнтэй */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #18181b;
+    color: #f3f4f6;
+    overflow-y: auto;
+  }
+</style>
