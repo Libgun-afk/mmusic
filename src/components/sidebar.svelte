@@ -37,24 +37,33 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
+  $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+
+  // .asd {
+  //   display: flex;
+  //   width: 5/2;
+  //   flex-direction: column;
+  //   min-height: 100vh;
+  //   background-color: #27272a;
+  //   position: fixed;
+  //   padding: 15px;
+
+  //   z-index: 1000;
+  //   // box-shadow: $box-shadow;
+  // }
+
   .asd {
-    display: flex;
-    width: 30%;
+    width: 250px; /* Sidebar-ийн тогтмол өргөн */
     min-height: 100vh;
     background-color: #27272a;
+    position: fixed; /* Байнгын байрлалтай болгоно */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px;
   }
-
   .asd {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    min-height: 100vh;
-    background-color: #27272a;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 30px;
-
     > div {
       margin-bottom: 16px;
 

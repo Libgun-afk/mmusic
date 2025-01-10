@@ -46,14 +46,43 @@
   $img-height: 17.48px;
   $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 
-  .app-header {
-    display: flex;
-    // align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    height: 40px;
-  }
+  // .app-header {
+  //   display: flex;
+  //   // align-items: center;
+  //   justify-content: space-between;
+  //   padding: 20px;
+  //   height: 40px;
+  // }
 
+  // .app-header {
+  //   position: fixed; /* Header-ийг дээд хэсэгт байрлуулна */
+  //   // top: 0;
+  //   // left: 0;
+  //   // right: 0;
+  //   width: auto;
+  //   z-index: 1000;
+  //   display: flex;
+  //   // justify-content: space-between;
+  //   padding: 20px;
+  //   height: 40px;
+  //   background-color: #18181b;
+  //   // box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  // }
+
+  .app-header {
+    position: fixed; /* Header байнгын байрлалтай */
+    top: 0;
+    left: 280px; /* Sidebar-ийн өргөнтэй тааруулна */
+    right: 0;
+    height: 60px;
+    background-color: #18181b;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  }
   .left-side {
     display: flex;
     justify-content: center;
@@ -75,7 +104,7 @@
   .header-content {
     display: flex;
     align-items: center;
-    gap: 40px;
+    // gap: 40px;
 
     .image-container {
       position: relative;
@@ -186,5 +215,11 @@
     height: 6px;
     display: flex;
     padding-right: 10px;
+  }
+  @media (max-width: 768px) {
+    .app-header {
+      height: 50px; /* Adjust height for smaller screens */
+      padding: 10px;
+    }
   }
 </style>

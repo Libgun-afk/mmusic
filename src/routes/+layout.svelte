@@ -19,29 +19,31 @@
 
 <style lang="scss">
   .layout {
+    width: 100vw;
     display: flex;
     background: #18181b;
   }
 
-  .side-bar {
+  .sidebar {
     display: flex;
-    width: 30%;
-    background-color: #27272a;
+    width: 20%;
+    background-color: #18181b;
   }
 
   .main-content {
     display: flex;
+    // width: 80%;
     flex-direction: column;
     overflow-y: auto;
     background-color: #2d2d2d;
   }
 
   .content {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: #18181b;
+    background-color: #18181b;
   }
 
   // .app-footer {
@@ -65,6 +67,7 @@
     }
 
     .main {
+      margin-top: 60px;
       gap: 10px;
     }
   }

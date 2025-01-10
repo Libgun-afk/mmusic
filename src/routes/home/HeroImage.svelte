@@ -5,16 +5,16 @@
 <style>
   .hero-image {
     width: 100%;
-    height: 300px;
-    background-color: #333;
+    height: 210px;
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
   }
 
   .hero-image img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
   }
