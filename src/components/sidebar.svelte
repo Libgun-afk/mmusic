@@ -1,5 +1,16 @@
+<script>
+  let selectedMenu = null;
+
+  // const handleMenuClick = (/** @type {string} */ menu) => {
+  //   selectedMenu = menu;
+  // };
+</script>
+
 <div class="asd">
-  <div>
+  <div
+    class="head
+  "
+  >
     <img src="/src/public/image copy 7.png" alt="" />
   </div>
   <div>
@@ -15,6 +26,7 @@
   <div>
     <h2>Миний сан</h2>
     <div>
+      <a href="/LastHeard">A</a>
       <img src="/src/public/image copy 10.png" alt="" />
       <div>Сүүлд сонссон</div>
     </div>
@@ -26,7 +38,7 @@
       <img src="/src/public/image copy 12.png" alt="" />
       <div>Микс үүсгэх</div>
     </div>
-    <div class="as">
+    <div>
       <img src="/src/public/image copy 13.png" alt="" />
       <div>Муугүй лист</div>
     </div>
@@ -40,98 +52,75 @@
 <style lang="scss">
   $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 
-  // .asd {
-  //   display: flex;
-  //   width: 5/2;
-  //   flex-direction: column;
-  //   min-height: 100vh;
-  //   background-color: #27272a;
-  //   position: fixed;
-  //   padding: 15px;
-
-  //   z-index: 1000;
-  //   // box-shadow: $box-shadow;
-  // }
-
   .asd {
-    width: 250px; /* Sidebar-ийн тогтмол өргөн */
+    width: 250px;
     min-height: 100vh;
     background-color: #27272a;
-    position: fixed; /* Байнгын байрлалтай болгоно */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 15px;
   }
+
   .asd {
     > div {
-      margin-bottom: 16px;
+      // margin-top: 56px;
 
       &:first-child {
         img {
           width: 97px;
           height: auto;
+          padding-left: 20px;
+          padding-top: 20px;
+          margin-bottom: 50px;
         }
       }
 
-      &:nth-child(2) {
+      &:nth-child(2),
+      &:last-child {
+        // margin-top: 56px;
         display: flex;
         flex-direction: column;
-        gap: 16px;
-
+        gap: 10px;
         div {
           display: flex;
+          padding-left: 20px;
+          height: 40px;
           align-items: center;
           color: #a1a1aa;
           font-size: 14px;
           font-weight: 600;
-          gap: 12px;
-          text-align: center;
           cursor: pointer;
-          transition: background-color 0.3s;
-          & :hover {
-            color: #fafafa;
-          }
-
-          img {
-            width: 15px;
-            height: 15px;
-          }
-        }
-      }
-
-      &:last-child {
-        h2 {
-          color: #525252;
-          font-size: 18px;
-          font-weight: bold;
-          margin-bottom: 16px;
-          padding-bottom: 15px;
-          border-bottom: 1px solid #525252;
-        }
-
-        > div {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          color: #a1a1aa;
-          font-size: 14px;
-          font-weight: 600;
-          padding: 8px 0;
-          cursor: pointer;
-          transition: background-color 0.3s;
+          transition:
+            background-color 0.3s,
+            border-right 0.3s;
+          border-right: 3px solid transparent;
 
           &:hover {
             color: #fafafa;
-            border-radius: 8px;
           }
 
           img {
             width: 15px;
             height: 15px;
+          }
+
+          &.selected {
             color: #fafafa;
+            // background-color: #525252;
+            border-right: 3px solid #fafafa;
           }
         }
+      }
+
+      &:last-child h2 {
+        color: #525252;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #525252;
+        padding-left: 20px;
+        padding-top: 30px;
       }
     }
   }

@@ -1,11 +1,10 @@
 <script>
-  // Any logic for header can be added here if needed
 </script>
 
 <header class="app-header">
   <div class="left-side">
-    <img class="left-img" src="/src/public/image copy 4.png" alt="" />
-    <img class="left-img" src="/src/public/image copy 5.png" alt="" />
+    <img class="left-img" src="/src/public/image copy 4.png" alt="Буцах" />
+    <img class="left-img" src="/src/public/image copy 5.png" alt="Цааш" />
   </div>
   <div class="header-content">
     <div class="image-container">
@@ -46,41 +45,18 @@
   $img-height: 17.48px;
   $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 
-  // .app-header {
-  //   display: flex;
-  //   // align-items: center;
-  //   justify-content: space-between;
-  //   padding: 20px;
-  //   height: 40px;
-  // }
-
-  // .app-header {
-  //   position: fixed; /* Header-ийг дээд хэсэгт байрлуулна */
-  //   // top: 0;
-  //   // left: 0;
-  //   // right: 0;
-  //   width: auto;
-  //   z-index: 1000;
-  //   display: flex;
-  //   // justify-content: space-between;
-  //   padding: 20px;
-  //   height: 40px;
-  //   background-color: #18181b;
-  //   // box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  // }
-
   .app-header {
-    position: fixed; /* Header байнгын байрлалтай */
-    top: 0;
-    left: 280px; /* Sidebar-ийн өргөнтэй тааруулна */
-    right: 0;
-    height: 60px;
+    width: 100%;
+    position: fixed;
+    right: 0px;
+    height: 80px;
+    padding: 0px 10px;
     background-color: #18181b;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   }
   .left-side {
@@ -88,6 +64,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    padding-left: 290px;
 
     .left-img {
       width: $img-width;
@@ -104,7 +81,8 @@
   .header-content {
     display: flex;
     align-items: center;
-    // gap: 40px;
+    gap: 20px;
+    padding-right: 20px;
 
     .image-container {
       position: relative;
@@ -218,7 +196,7 @@
   }
   @media (max-width: 768px) {
     .app-header {
-      height: 50px; /* Adjust height for smaller screens */
+      height: 50px;
       padding: 10px;
     }
   }
