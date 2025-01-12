@@ -3,7 +3,7 @@
   import FooterMid from "../components/FooterMid.svelte";
   import FooterRight from "../components/FooterRight.svelte";
   import Header from "../components/Header.svelte";
-  import Sidebar from "../components/Sidebar.svelte";
+  import Sidebar from "$components/Sidebar.svelte";
 </script>
 
 <div>
