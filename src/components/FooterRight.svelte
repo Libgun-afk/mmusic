@@ -1,9 +1,9 @@
 <div class="right">
   <div class="text">Д.Үг</div>
-  <img class="list" src="/src/public/image copy 22.png" alt="" />
-  <img class="volume" src="/src/public/image copy 23.png" alt="" />
+  <img class="list" src="/image copy 22.png" alt="" />
+  <img class="volume" src="/image copy 23.png" alt="" />
   <div class="list-section">
-    <img class="list" src="/src/public/image copy 22.png" alt="" />
+    <img class="list" src="/image copy 22.png" alt="" />
     <div class="hover-text">Жагсаалт</div>
   </div>
 </div>

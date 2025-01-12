@@ -1,39 +1,35 @@
 <header class="app-header">
   <div class="left-side">
     <div class="img-con">
-      <img class="left-img" src="/src/public/image copy 4.png" alt="Буцах" />
+      <img class="left-img" src="/image copy 4.png" alt="Буцах" />
       <div class="hover-text">Back</div>
     </div>
     <div class="img-con">
-      <img class="left-img" src="/src/public/image copy 5.png" alt="Цааш" />
+      <img class="left-img" src="/image copy 5.png" alt="Цааш" />
       <div class="hover-text">Next</div>
     </div>
   </div>
   <div class="header-content">
     <div class="image-container">
-      <img
-        class="main-image"
-        src="/src/public/Flag_of_Mongolia.gif"
-        alt="Төрийн дуулал"
-      />
+      <img class="main-image" src="/Flag_of_Mongolia.gif" alt="Төрийн дуулал" />
       <span class="image-text-overlay">Монгол улсын төрийн дуулал</span>
       <div class="overlay-button">
-        <img class="button-icon" src="/src/public/image copy.png" alt="Icon" />
+        <img class="button-icon" src="/image copy.png" alt="Icon" />
       </div>
     </div>
     <div class="notf-btn">
-      <img class="notf-icon" src="/src/public/image copy 2.png" alt="Icon" />
+      <img class="notf-icon" src="/image copy 2.png" alt="Icon" />
     </div>
     <div class="user-info">
       <div class="user-details">
-        <img class="user-img" src="/src/public/image copy 3.png" alt="user" />
+        <img class="user-img" src="/image copy 3.png" alt="user" />
         <div class="user-text">Хэрэглэгч</div>
       </div>
-      <img class="img" src="/src/public/image copy 6.png" alt="" />
+      <img class="img" src="/image copy 6.png" alt="" />
     </div>
     <!-- <img
       class="mobilde-user-img"
-      src="/src/public/image copy 3.png"
+      src="/image copy 3.png"
       alt="user"
     /> -->
   </div>

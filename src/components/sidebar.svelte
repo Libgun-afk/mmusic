@@ -1,13 +1,11 @@
 <script>
   let showSidebar = false;
-  let logoSrc = "/src/public/image copy 7.png";
-  let closeLogoSrc = "/src/public/image copy 8.png";
+  let logoSrc = "/image copy 7.png";
+  let closeLogoSrc = "/image copy 8.png";
 
   function toggleSidebar() {
     showSidebar = !showSidebar;
-    logoSrc = showSidebar
-      ? "/src/public/image copy 7.png"
-      : "/src/public/image copy 7.png";
+    logoSrc = showSidebar ? "/image copy 7.png" : "/image copy 8.png";
   }
 </script>
 
@@ -22,34 +20,34 @@
   </div>
   <div class="library">
     <div class="library-item">
-      <img src="/src/public/image copy 8.png" alt="Icon" />
+      <img src="/image copy 8.png" alt="Icon" />
       <div>Нүүр</div>
     </div>
     <div class="library-item">
-      <img src="/src/public/image copy 14.png" alt="Icon" />
+      <img src="/image copy 14.png" alt="Icon" />
       <div>Хайх</div>
     </div>
   </div>
   <div class="library">
     <h2>Миний сан</h2>
     <div class="library-item">
-      <img src="/src/public/image copy 10.png" alt="Icon" />
+      <img src="/image copy 10.png" alt="Icon" />
       <div>Сүүлд сонссон</div>
     </div>
     <div class="library-item">
-      <img src="/src/public/image copy 11.png" alt="Icon" />
+      <img src="/image copy 11.png" alt="Icon" />
       <div>Дуртай</div>
     </div>
     <div class="library-item">
-      <img src="/src/public/image copy 12.png" alt="Icon" />
+      <img src="/image copy 12.png" alt="Icon" />
       <div>Микс үүсгэх</div>
     </div>
     <div class="library-item">
-      <img src="/src/public/image copy 13.png" alt="Icon" />
+      <img src="/image copy 13.png" alt="Icon" />
       <div>Муугүй лист</div>
     </div>
     <div class="library-item">
-      <img src="/src/public/image copy 13.png" alt="Icon" />
+      <img src="/image copy 13.png" alt="Icon" />
       <div>Гоё дуунууд</div>
     </div>
   </div>
@@ -58,7 +56,7 @@
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="mobile-menu-btn" on:click={toggleSidebar}>
-  <img src="/src/public/image copy 8.png" alt="Меню" />
+  <img src="/image copy 8.png" alt="Меню" />
 </div>
 
 {#if showSidebar}

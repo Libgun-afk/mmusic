@@ -10,7 +10,7 @@
       <img src={artist.image} alt={artist.name} />
       <p>{artist.name}</p>
       <div class="play-btn">
-        <img class="play-img" src="/src/public/image copy 17.png" alt="" />
+        <img class="play-img" src="/image copy 17.png" alt="" />
       </div>
     </div>
   {/each}

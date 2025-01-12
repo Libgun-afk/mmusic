@@ -21,20 +21,16 @@
   <!-- svelte-ignore a11y_click_events_have_key_events -->
   <div class="like-container" on:click={handleClick}>
     {#if isClicked}
-      <img
-        class="like-img"
-        src="/src/public/image copy 19.png"
-        alt="clicked-like"
-      />
+      <img class="like-img" src="/image copy 19.png" alt="clicked-like" />
       <div class="hover-text">Дургүй</div>
     {:else}
-      <img class="like-img" src="/src/public/image copy 18.png" alt="like" />
+      <img class="like-img" src="/image copy 18.png" alt="like" />
       <div class="hover-text">Дуртай</div>
     {/if}
   </div>
 
   <div class="setings-container">
-    <img class="setings" src="/src/public/image copy 20.png" alt="setings" />
+    <img class="setings" src="/image copy 20.png" alt="setings" />
     <div class="hover-text">Микс тохиргоо</div>
   </div>
 </div>

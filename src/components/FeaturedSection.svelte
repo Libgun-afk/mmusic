@@ -3,7 +3,7 @@
   import NewCreation from "./NewCreation.svelte";
   import NewHot from "./NewHot.svelte";
 
-  const src = "/src/public/image copy 9.png";
+  const src = "/image copy 9.png";
 </script>
 
 <div class="featured-section">

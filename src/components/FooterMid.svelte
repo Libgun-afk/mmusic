@@ -12,21 +12,17 @@
 </script>
 
 <div class="mid">
-  <img class="back" src="/src/public/image copy 21.png" alt="Previous" />
-  <img class="pause" src="/src/public/image copy 21.png" alt="Pause/Play" />
-  <img class="next" src="/src/public/image copy 21.png" alt="Next" />
+  <img class="back" src="/image copy 21.png" alt="Previous" />
+  <img class="pause" src="/image copy 21.png" alt="Pause/Play" />
+  <img class="next" src="/image copy 21.png" alt="Next" />
   <div class="times">02:56</div>
-  <img class="time" src="/src/public/image copy 25.png" alt="Timeline" />
+  <img class="time" src="/image copy 25.png" alt="Timeline" />
   <div class="times">03:48</div>
 
   <!-- svelte-ignore a11y_click_events_have_key_events -->
   <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div class="repeat-section" on:click={handleRepeatClick}>
-    <img
-      class="repeat"
-      src="/src/public/image copy 21.png"
-      alt="Repeat Button"
-    />
+    <img class="repeat" src="/image copy 21.png" alt="Repeat Button" />
     <div class="hover-text">
       {repeatState === 0
         ? "Давтах"
@@ -39,11 +35,7 @@
   <!-- svelte-ignore a11y_click_events_have_key_events -->
   <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div class="shuffle-section" on:click={handleShuffleClick}>
-    <img
-      class="shuffle"
-      src="/src/public/image copy 21.png"
-      alt="Shuffle Button"
-    />
+    <img class="shuffle" src="/image copy 21.png" alt="Shuffle Button" />
     <div class="hover-text">{isShuffle ? "Unshuffle" : "Shuffle"}</div>
   </div>
 </div>
