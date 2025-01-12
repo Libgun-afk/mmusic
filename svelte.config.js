@@ -1,9 +1,9 @@
-import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-vercel";
+import { sveltePreprocess } from "svelte-preprocess";
 
 export default {
   kit: {},
-  preprocess: preprocess({
+  preprocess: sveltePreprocess({
     scss: {
       additionalData: "",
     },
