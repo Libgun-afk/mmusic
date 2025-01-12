@@ -123,11 +123,6 @@
         height: 15px;
         object-fit: contain;
       }
-
-      &.selected {
-        color: #fafafa;
-        border-right: 3px solid #fafafa;
-      }
     }
 
     h2 {
