@@ -169,22 +169,10 @@
         margin-top: 5px;
       }
 
-      .overlay-button {
-        position: absolute;
-        width: $button-size;
-        height: $button-size;
-        background-color: #6b7280;
-        border-radius: 100px;
-        right: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .button-icon {
-          width: $icon-size;
-          height: $icon-size;
-          object-fit: contain;
-        }
+      .button-icon {
+        width: $icon-size;
+        height: $icon-size;
+        object-fit: contain;
       }
     }
   }

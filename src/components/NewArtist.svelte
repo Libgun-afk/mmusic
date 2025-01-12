@@ -85,36 +85,4 @@
   .artist-rounded:hover img {
     filter: brightness(0.5);
   }
-
-  .artist-overlay {
-    position: relative;
-  }
-
-  .artist-overlay img {
-    transition: filter 0.3s ease;
-    cursor: pointer;
-  }
-
-  .artist-overlay:hover img {
-    filter: brightness(0.5);
-  }
-
-  .overlay-button {
-    position: absolute;
-    top: 65%;
-    left: 83%;
-    transform: translate(-50%, -50%);
-    width: 45px;
-    height: 45px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 50%;
-  }
-
-  .artist-overlay:hover .overlay-button {
-    display: flex;
-    cursor: pointer;
-  }
 </style>
