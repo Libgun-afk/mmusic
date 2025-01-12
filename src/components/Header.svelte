@@ -1,10 +1,13 @@
-<script>
-</script>
-
 <header class="app-header">
   <div class="left-side">
-    <img class="left-img" src="/src/public/image copy 4.png" alt="Буцах" />
-    <img class="left-img" src="/src/public/image copy 5.png" alt="Цааш" />
+    <div class="img-con">
+      <img class="left-img" src="/src/public/image copy 4.png" alt="Буцах" />
+      <div class="hover-text">Back</div>
+    </div>
+    <div class="img-con">
+      <img class="left-img" src="/src/public/image copy 5.png" alt="Цааш" />
+      <div class="hover-text">Next</div>
+    </div>
   </div>
   <div class="header-content">
     <div class="image-container">
@@ -28,6 +31,11 @@
       </div>
       <img class="img" src="/src/public/image copy 6.png" alt="" />
     </div>
+    <!-- <img
+      class="mobilde-user-img"
+      src="/src/public/image copy 3.png"
+      alt="user"
+    /> -->
   </div>
 </header>
 
@@ -47,33 +55,68 @@
 
   .app-header {
     width: 100%;
+    height: 71px;
     position: fixed;
-    right: 0px;
-    height: 80px;
-    padding: 0px 10px;
+    right: 0;
+    padding: 0 15px;
     background-color: #18181b;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    @media (max-width: 768px) {
+      justify-content: flex-end;
+    }
   }
+
   .left-side {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 16px;
-    padding-left: 290px;
+    padding-left: 275px;
 
-    .left-img {
-      width: $img-width;
-      height: $img-height;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .img-con {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      &:hover {
-        transform: scale(1.1);
+      .left-img {
+        width: $img-width;
+        height: $img-height;
+        cursor: pointer;
+        filter: brightness(0.4);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .hover-text {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #3f3f46;
+        color: #fafafa;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 700;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease;
+      }
+
+      &:hover .hover-text {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -83,6 +126,9 @@
     align-items: center;
     gap: 20px;
     padding-right: 20px;
+    @media (max-width: 768px) {
+      display: none; /* Hide the whole content on mobile */
+    }
 
     .image-container {
       position: relative;
@@ -94,12 +140,17 @@
       overflow: hidden;
       border-radius: $border-radius;
       box-shadow: $box-shadow;
-
+      cursor: pointer;
+      @media (max-width: 768px) {
+        display: none; /* Hide image container on mobile */
+      }
       .main-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transform: scale(1.2);
+        filter: brightness(0.6);
       }
 
       .image-text-overlay {
@@ -117,23 +168,23 @@
         align-items: center;
         margin-top: 5px;
       }
-    }
 
-    .overlay-button {
-      position: absolute;
-      width: $button-size;
-      height: $button-size;
-      background-color: #6b7280;
-      border-radius: 100px;
-      right: 3px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      .overlay-button {
+        position: absolute;
+        width: $button-size;
+        height: $button-size;
+        background-color: #6b7280;
+        border-radius: 100px;
+        right: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      .button-icon {
-        width: $icon-size;
-        height: $icon-size;
-        object-fit: contain;
+        .button-icon {
+          width: $icon-size;
+          height: $icon-size;
+          object-fit: contain;
+        }
       }
     }
   }
@@ -147,6 +198,10 @@
     justify-content: center;
     align-items: center;
     box-shadow: $box-shadow;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      display: flex;
+    }
 
     .notf-icon {
       width: $icon-size;
@@ -166,38 +221,85 @@
     gap: $gap;
     margin-left: 5px;
     box-shadow: $box-shadow;
-  }
+    cursor: pointer;
 
-  .user-details {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding-left: 3px;
-  }
+    .user-details {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding-left: 3px;
 
-  .user-text {
-    color: #e4e4e7;
-    font-size: 14px;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      .user-text {
+        color: #e4e4e7;
+        font-size: 14px;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .user-img {
+        width: $img-size;
+        height: $img-size;
+        border-radius: $border-radius;
+        display: block;
+      }
+    }
+
+    .mobilde-user-img {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        margin-left: 0;
+      }
+    }
+
+    .img {
+      width: 10px;
+      height: 6px;
+      display: flex;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .user-img {
-    width: $img-size;
-    height: $img-size;
-    border-radius: $border-radius;
+    display: block;
+    @media (max-width: 768px) {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      margin-left: 0;
+      position: absolute;
+      right: 15px;
+    }
   }
 
-  .img {
-    width: 10px;
-    height: 6px;
-    display: flex;
-    padding-right: 10px;
-  }
   @media (max-width: 768px) {
     .app-header {
-      height: 50px;
       padding: 10px;
+      height: 50px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .notf-btn,
+    .user-info {
+      margin-left: 15px;
+    }
+
+    .user-img {
+      display: block;
     }
   }
 </style>

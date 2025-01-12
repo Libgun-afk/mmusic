@@ -1,127 +1,188 @@
 <script>
-  let selectedMenu = null;
+  let showSidebar = false;
+  let logoSrc = "/src/public/image copy 7.png";
+  let closeLogoSrc = "/src/public/image copy 8.png";
 
-  // const handleMenuClick = (/** @type {string} */ menu) => {
-  //   selectedMenu = menu;
-  // };
+  function toggleSidebar() {
+    showSidebar = !showSidebar;
+    logoSrc = showSidebar
+      ? "/src/public/image copy 7.png"
+      : "/src/public/image copy 7.png";
+  }
 </script>
 
-<div class="asd">
-  <div
-    class="head
-  "
-  >
-    <img src="/src/public/image copy 7.png" alt="" />
+<div class="sidebar {showSidebar ? 'open' : ''}">
+  <div class="head">
+    <img src={logoSrc} alt="Лого" />
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
+    <!-- svelte-ignore a11y_no_static_element_interactions -->
+    <div class="close-btn" on:click={toggleSidebar}>
+      <img src={closeLogoSrc} alt="Хаах" />
+    </div>
   </div>
-  <div>
-    <div>
-      <img src="/src/public/image copy 8.png" alt="" />
+  <div class="library">
+    <div class="library-item">
+      <img src="/src/public/image copy 8.png" alt="Icon" />
       <div>Нүүр</div>
     </div>
-    <div>
-      <img src="/src/public/image copy 14.png" alt="" />
+    <div class="library-item">
+      <img src="/src/public/image copy 14.png" alt="Icon" />
       <div>Хайх</div>
     </div>
   </div>
-  <div>
+  <div class="library">
     <h2>Миний сан</h2>
-    <div>
-      <a href="/LastHeard">A</a>
-      <img src="/src/public/image copy 10.png" alt="" />
+    <div class="library-item">
+      <img src="/src/public/image copy 10.png" alt="Icon" />
       <div>Сүүлд сонссон</div>
     </div>
-    <div>
-      <img src="/src/public/image copy 11.png" alt="" />
+    <div class="library-item">
+      <img src="/src/public/image copy 11.png" alt="Icon" />
       <div>Дуртай</div>
     </div>
-    <div>
-      <img src="/src/public/image copy 12.png" alt="" />
+    <div class="library-item">
+      <img src="/src/public/image copy 12.png" alt="Icon" />
       <div>Микс үүсгэх</div>
     </div>
-    <div>
-      <img src="/src/public/image copy 13.png" alt="" />
+    <div class="library-item">
+      <img src="/src/public/image copy 13.png" alt="Icon" />
       <div>Муугүй лист</div>
     </div>
-    <div>
-      <img src="/src/public/image copy 13.png" alt="" />
+    <div class="library-item">
+      <img src="/src/public/image copy 13.png" alt="Icon" />
       <div>Гоё дуунууд</div>
     </div>
   </div>
 </div>
 
-<style lang="scss">
-  $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div class="mobile-menu-btn" on:click={toggleSidebar}>
+  <img src="/src/public/image copy 8.png" alt="Меню" />
+</div>
 
-  .asd {
-    width: 250px;
+{#if showSidebar}
+  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div class="page-overlay" on:click={toggleSidebar}></div>
+{/if}
+
+<style lang="scss">
+  .sidebar {
+    width: 220px;
     min-height: 100vh;
     background-color: #27272a;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -220px;
     z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    @media (max-width: 768px) {
+      top: 70px;
+
+      background-color: #18181b;
+    }
   }
 
-  .asd {
-    > div {
-      // margin-top: 56px;
+  .sidebar.open {
+    left: 0;
+  }
 
-      &:first-child {
-        img {
-          width: 97px;
-          height: auto;
-          padding-left: 20px;
-          padding-top: 20px;
-          margin-bottom: 50px;
-        }
+  .head {
+    img {
+      width: 97px;
+      height: auto;
+      padding: 20px 20px 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  .library {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .library-item {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      gap: 10px;
+      color: #a1a1aa;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0 20px;
+      cursor: pointer;
+
+      &:hover {
+        border-right: 3px solid transparent;
+        border-color: white;
       }
 
-      &:nth-child(2),
-      &:last-child {
-        // margin-top: 56px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        div {
-          display: flex;
-          padding-left: 20px;
-          height: 40px;
-          align-items: center;
-          color: #a1a1aa;
-          font-size: 14px;
-          font-weight: 600;
-          cursor: pointer;
-          transition:
-            background-color 0.3s,
-            border-right 0.3s;
-          border-right: 3px solid transparent;
-
-          &:hover {
-            color: #fafafa;
-          }
-
-          img {
-            width: 15px;
-            height: 15px;
-          }
-
-          &.selected {
-            color: #fafafa;
-            // background-color: #525252;
-            border-right: 3px solid #fafafa;
-          }
-        }
+      img {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
       }
 
-      &:last-child h2 {
-        color: #525252;
-        font-size: 18px;
-        font-weight: bold;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #525252;
-        padding-left: 20px;
-        padding-top: 30px;
+      &.selected {
+        color: #fafafa;
+        border-right: 3px solid #fafafa;
       }
     }
+
+    h2 {
+      color: #525252;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 20px 15px;
+      border-bottom: 1px solid #525252;
+    }
+  }
+
+  .close-btn {
+    display: none; /* Desktop дээр хаах товч харагдахгүй байна */
+  }
+
+  @media (max-width: 768px) {
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .mobile-menu-btn {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 2000;
+      cursor: pointer;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .sidebar {
+      display: block;
+      left: 0;
+    }
+  }
+
+  .sidebar.open ~ .page-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
   }
 </style>

@@ -1,116 +1,19 @@
-<script>
-  const src = "/src/public/image copy 15.png";
-  export let data = [
-    { name: "МУСТА Т.Бат-Оч", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  ];
-  export let data2 = [
-    { name: "МУСТА Т.Бат-Оч", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  ];
-  export let data3 = [
-    { name: "МУСТА Т.Бат-Оч", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  ];
-  export let data4 = [
-    { name: "МУСТА Т.Бат-Оч", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-    { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  ];
-  // export let data5 = [
-  //   {
-  //     name: "Энд балиар урт дуунынэр байвал яаж байна",
-  //     image: "/src/public/image copy 15.png",
-  //   },
-  //   {
-  //     name: "Энд балиар урт дуунынэр байвал яаж байна",
-  //     image: "/src/public/image copy 15.png",
-  //   },
-  //   { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  //   { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  //   { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  //   { name: "МУСТА А.Бат-Эрдэнэ", image: "/src/public/image copy 15.png" },
-  // ];
+<!-- <script>
+  import NewArtist from "./NewArtist.svelte";
+  import NewCreation from "./NewCreation.svelte";
+  import NewHot from "./NewHot.svelte";
+
+  const src = "/src/public/image copy 9.png";
 </script>
 
 <div class="featured-section">
   <div class="hero-image">
-    <img {src} alt="Таны сонголт" />
+    <img {src} alt="hero" />
   </div>
-  <h2>New Hot</h2>
-  <div class="scrollable-row">
-    {#each data as artist}
-      <div class="artist">
-        <img src={artist.image} alt={artist.name} />
-        <p>{artist.name}</p>
-      </div>
-    {/each}
-  </div>
-  <h2>Шинээр нэмэгдсэн бүтээлүүд</h2>
-  <div class="scrollable-row">
-    {#each data2 as artist}
-      <div class="artist">
-        <img src={artist.image} alt={artist.name} />
-        <p>{artist.name}</p>
-      </div>
-    {/each}
-  </div>
-  <h2>Шинэ уран бүтээлч</h2>
-  <div class="scrollable-row">
-    {#each data3 as artist}
-      <div class="artist3">
-        <img src={artist.image} alt={artist.name} />
-        <p>{artist.name}</p>
-      </div>
-    {/each}
-  </div>
-  <h2>Шинээр нэмэгдсэн хамтрал уран бүтээлчид</h2>
-  <div class="scrollable-row">
-    {#each data4 as artist}
-      <div class="artist4">
-        <img src={artist.image} alt={artist.name} />
-        <p>{artist.name}</p>
-      </div>
-    {/each}
-  </div>
-  <!-- <div class="offer">
-    <h2>Санал болгох</h2>
-    <div class="offer-grid">
-      {#each data5 as artist, i}
-        <div class="artist-offer">
-          <img src={artist.image} alt={artist.name} />
-          <p>{artist.name}</p>
-        </div>
-      {/each}
-    </div>
-  </div> -->
+
+  <NewHot />
+  <NewCreation />
+  <NewArtist />
 </div>
 
 <style>
@@ -118,164 +21,164 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 220px;
   }
 
   .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 30px;
   }
+
   .featured-section {
     display: flex;
     flex-direction: column;
-    padding-left: 270px;
-    padding-top: 95px;
-    padding-right: 15px;
-    /* margin-right: 50px; */
-    /* width: 1300px; */
-    /* width: 87%; */
-    background-color: #27272a;
-    border-radius: 8px;
-    overflow: hidden;
+    padding: 65px 15px 0 240px;
     background-color: #1a1a1a;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      background-color: #1a1a1a;
+    }
   }
 
-  /* Heading Style */
-  .featured-section h2 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 500px;
-    height: 36px;
-    color: #f3f4f6;
-    margin-bottom: 12px;
-    font-size: medium;
+  /* .featured-section h2 {
+    color: #fffffff6;
+    font-size: larger;
     font-weight: 700;
-    /* text-align: center; */
+    margin: 12px 0;
   }
 
-  /* Scrollable Row */
   .scrollable-row {
     display: flex;
     overflow-x: auto;
-    gap: 12px;
-    padding-bottom: 8px;
-    scroll-behavior: auto;
-    border-top: 1px solid;
-    border-color: #52525b;
-    padding-top: 20px;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #52525b;
   }
 
-  .scrollable-row::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .scrollable-row::-webkit-scrollbar-thumb {
-    background-color: #555;
-    border-radius: 4px;
-  }
-
-  .scrollable-row::-webkit-scrollbar-track {
-    background-color: #18181b;
-  }
-
-  /* Artist Card */
   .artist {
     flex: 0 0 auto;
-    padding-bottom: 12px;
     text-align: center;
     min-width: 200px;
-    max-width: 310px;
+    max-width: 200px;
   }
-  .artist3 {
-    flex: 0 0 auto;
-    padding-bottom: 12px;
-    text-align: center;
-    min-width: 200px;
-    max-width: 310px;
-  }
-  .artist3 img {
-    width: 100%;
-    height: auto;
-    border-radius: 100%;
-    margin-bottom: 8px;
-  }
-
-  .artist4 {
-    flex: 0 0 auto;
-    padding-bottom: 12px;
-    text-align: center;
-    /* min-width: 200px;
-    max-width: 310px; */
-    gap: 50px;
-  }
-  .artist4 img {
-    width: 350px;
-    height: 250px;
-    border-radius: 20px;
-    margin-bottom: 8px;
-    object-fit: cover;
-  }
-
-  /* .offer {
-    display: grid;
-  }
-  .offer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .offer h2 {
-    color: #f3f4f6;
-    font-size: medium;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-
-  .offer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    gap: 80px;
-    max-height: 600px;
-  }
-
-  .artist-offer {
-    display: flex;
-    align-items: center;
-    width: 450px;
-    height: 200px;
-    border: 0px;
-    border-radius: 10px;
-    background-color: #5a0208;
-  }
-
-  .artist-offer img {
-    width: 205px;
-    height: 205px;
-    object-fit: cover;
-  }
-
-  .artist-offer p {
-    color: #f3f4f6;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0;
-    padding-left: 15px;
-  } */
 
   .artist img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 8px;
+    object-fit: cover;
+  }
+
+  .artist-rounded img {
+    border-radius: 50%;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  .artist-rounded:hover img {
+    filter: brightness(0.5);
+  }
+
+  .artist-overlay {
+    position: relative;
+  }
+
+  .artist-overlay img {
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  .artist-overlay:hover img {
+    filter: brightness(0.5);
+  }
+
+  .overlay-button {
+    position: absolute;
+    top: 65%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .artist-overlay:hover .overlay-button {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .play-button {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
 
   .artist p {
     color: #f3f4f6;
     font-size: 14px;
     font-weight: 600;
-    margin: 0;
+    margin: 8px 0 0;
+  } */
+</style> -->
+
+<script>
+  import NewArtist from "./NewArtist.svelte";
+  import NewCreation from "./NewCreation.svelte";
+  import NewHot from "./NewHot.svelte";
+
+  const src = "/src/public/image copy 9.png";
+</script>
+
+<div class="featured-section">
+  <div class="hero-image">
+    <img {src} alt="hero" />
+  </div>
+
+  <NewHot />
+  <NewCreation />
+  <NewArtist />
+</div>
+
+<style>
+  .featured-section {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 10px 0px 230px;
+    background-color: #1a1a1a;
+
+    @media (max-width: 768px) {
+      padding: 85px 10px 0 10px;
+    }
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    border-radius: 30px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  /* Media queries to adjust for smaller screens */
+  @media (max-width: 768px) {
+    .hero-image {
+      height: 180px; /* Adjust the hero image size for smaller screens */
+    }
   }
 </style>

@@ -1,79 +1,66 @@
 <script lang="ts">
-  import Footer from "../components/Footer.svelte";
+  import Footer from "../components/FooterLeft.svelte";
+  import FooterMid from "../components/FooterMid.svelte";
+  import FooterRight from "../components/FooterRight.svelte";
   import Header from "../components/Header.svelte";
-  import Sidebar from "../components/sidebar.svelte";
+  import Sidebar from "../components/Sidebar.svelte";
 </script>
 
-<div class="layout">
+<layout>
   <Header />
-  <aside class="sidebar">
-    <Sidebar />
-  </aside>
+  <Sidebar />
 
-  <div class="content">
-    <main class="main-content">
-      <slot />
-    </main>
-  </div>
-  <aside>
+  <main>
+    <slot />
+  </main>
+
+  <footer>
     <Footer />
-  </aside>
-</div>
+    <FooterMid />
+    <FooterRight />
+  </footer>
+</layout>
 
 <style lang="scss">
-  .layout {
+  layout {
     width: 100vw;
+    height: 100vh;
     display: flex;
-    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  .sidebar {
-    display: flex;
-    background-color: #18181b;
-    background-color: white;
-  }
-
-  .main-content {
+  main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     background-color: #2d2d2d;
-    overflow: hidden;
-  }
+    flex-grow: 1;
 
-  // .app-footer {
-  //   width: 100%;
-  //   background-color: #f3f4f6;
-  //   color: #f3f4f6;
-  //   text-align: center;
-  //   padding: 16px;
-  //   border-top: 1px solid #444;
-  // }
-  .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #18181b;
-  }
-
-  // .app-footer {
-  //   background-color: #27272a;
-  //   color: #f3f4f6;
-  //   text-align: center;
-  //   padding: 16px;
-  //   border-top: 1px solid #444;
-  //   margin-top: auto;
-  // }
-
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 100vw;
-      order: 1;
+    @media (max-width: 768px) {
+      width: 100%;
     }
+  }
 
-    .main-content {
-      padding: 10px;
+  footer {
+    display: flex;
+    filter: brightness(0.8);
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0061ff 10%, #00235b 30%);
+    padding: 0 20px;
+    z-index: 2500;
+    height: 130px;
+
+    @media (max-width: 768px) {
+      height: 100px;
+      padding-right: 0 20px;
     }
   }
 </style>
