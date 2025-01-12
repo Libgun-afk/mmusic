@@ -11,12 +11,6 @@
     <div style="display: contents" class="overflow-hidden">
       %sveltekit.body%
     </div>
-    <script>
-      const theme = new URL(window.location).searchParams.get("theme");
-
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(theme || "light");
-    </script>
   </body>
 </html>
 
