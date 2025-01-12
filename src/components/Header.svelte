@@ -232,18 +232,18 @@
       }
     }
 
-    .mobilde-user-img {
-      display: none;
+    // .mobilde-user-img {
+    //   display: none;
 
-      @media (max-width: 768px) {
-        display: flex;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 15px;
-        margin-left: 0;
-      }
-    }
+    //   @media (max-width: 768px) {
+    //     display: flex;
+    //     width: 30px;
+    //     height: 30px;
+    //     position: absolute;
+    //     right: 15px;
+    //     margin-left: 0;
+    //   }
+    // }
 
     .img {
       width: 10px;
