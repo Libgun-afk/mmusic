@@ -6,7 +6,7 @@
   import Sidebar from "../components/Sidebar.svelte";
 </script>
 
-<layout>
+<div>
   <Header />
   <Sidebar />
 
@@ -19,10 +19,10 @@
     <FooterMid />
     <FooterRight />
   </footer>
-</layout>
+</div>
 
 <style lang="scss">
-  layout {
+  div {
     width: 100vw;
     height: 100vh;
     display: flex;
