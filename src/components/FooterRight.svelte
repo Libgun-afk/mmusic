@@ -3,7 +3,7 @@
   <img class="list" src="/image copy 22.png" alt="" />
   <img class="volume" src="/image copy 23.png" alt="" />
   <div class="list-section">
-    <img class="list" src="/image copy 22.png" alt="" />
+    <img class="list" src="/image copy 32.png" alt="" />
     <div class="hover-text">Жагсаалт</div>
   </div>
 </div>

@@ -1,17 +1,17 @@
 <script>
   let showSidebar = false;
   let logoSrc = "/image copy 7.png";
-  let closeLogoSrc = "/image copy 8.png";
+  let closeLogoSrc = "/image copy 33.png";
 
   function toggleSidebar() {
     showSidebar = !showSidebar;
-    logoSrc = showSidebar ? "/image copy 7.png" : "/image copy 8.png";
   }
 </script>
 
 <div class="sidebar {showSidebar ? 'open' : ''}">
   <div class="head">
     <img src={logoSrc} alt="Лого" />
+
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div class="close-btn" on:click={toggleSidebar}>
@@ -19,6 +19,8 @@
     </div>
   </div>
   <div class="library">
+    <img class="logoo" src="/image copy 7.png" alt="" />
+
     <div class="library-item">
       <img src="/image copy 8.png" alt="Icon" />
       <div>Нүүр</div>
@@ -56,7 +58,7 @@
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="mobile-menu-btn" on:click={toggleSidebar}>
-  <img src="/image copy 8.png" alt="Меню" />
+  <img src="/image copy 33.png" alt="Меню" />
 </div>
 
 {#if showSidebar}
@@ -75,90 +77,110 @@
     left: -220px;
     z-index: 1000;
     transition: left 0.3s ease-in-out;
+
     @media (max-width: 768px) {
       top: 70px;
-
       background-color: #18181b;
     }
-  }
 
-  .sidebar.open {
-    left: 0;
-  }
-
-  .head {
-    img {
-      width: 97px;
-      height: auto;
-      padding: 20px 20px 0;
-      margin-bottom: 50px;
+    &.open {
+      left: 0;
     }
-  }
 
-  .library {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    .head {
+      padding: 20px;
+      img {
+        width: 97px;
+        height: auto;
+        margin-bottom: 50px;
+        display: none;
+      }
 
-    .library-item {
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .logoo {
+      width: 88.7px;
+      height: 32px;
+      padding: 0px 20px 30px;
+      cursor: pointer;
+    }
+    .library {
       display: flex;
-      align-items: center;
-      height: 40px;
+      flex-direction: column;
       gap: 10px;
-      color: #a1a1aa;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 0 20px;
-      cursor: pointer;
 
-      &:hover {
-        border-right: 3px solid transparent;
-        border-color: white;
+      .library-item {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        gap: 10px;
+        color: #a1a1aa;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 20px;
+        cursor: pointer;
+
+        &:hover {
+          border-right: 3px solid transparent;
+          border-color: white;
+        }
+
+        img {
+          width: 15px;
+          height: 15px;
+          object-fit: contain;
+        }
       }
 
-      img {
-        width: 15px;
-        height: 15px;
-        object-fit: contain;
+      h2 {
+        color: #525252;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0 20px 15px;
+        border-bottom: 1px solid #525252;
       }
     }
 
-    h2 {
-      color: #525252;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 0 20px 15px;
-      border-bottom: 1px solid #525252;
-    }
-  }
-
-  .close-btn {
-    display: none; /* Desktop дээр хаах товч харагдахгүй байна */
-  }
-
-  @media (max-width: 768px) {
-    .close-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-    .mobile-menu-btn {
-      display: block;
+    .page-overlay {
+      display: none;
       position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 2000;
-      cursor: pointer;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
 
-      img {
-        width: 30px;
-        height: 30px;
-      }
+    &.open ~ .page-overlay {
+      display: block;
+    }
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
     }
   }
 
@@ -167,15 +189,5 @@
       display: block;
       left: 0;
     }
-  }
-
-  .sidebar.open ~ .page-overlay {
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
   }
 </style>

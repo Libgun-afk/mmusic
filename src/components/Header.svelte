@@ -27,11 +27,6 @@
       </div>
       <img class="img" src="/image copy 6.png" alt="" />
     </div>
-    <!-- <img
-      class="mobilde-user-img"
-      src="/image copy 3.png"
-      alt="user"
-    /> -->
   </div>
 </header>
 
@@ -45,8 +40,8 @@
   $icon-size: 20px;
   $gap: 12px;
   $img-size: 38px;
-  $img-width: 10.5px;
-  $img-height: 17.48px;
+  $img-width: 16px;
+  $img-height: 16px;
   $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 
   .app-header {
@@ -74,6 +69,7 @@
     @media (max-width: 768px) {
       display: none;
     }
+
     .img-con {
       position: relative;
       display: flex;
@@ -81,8 +77,8 @@
       align-items: center;
 
       .left-img {
-        width: $img-width;
-        height: $img-height;
+        width: 10.5px;
+        height: 17.48px;
         cursor: pointer;
         filter: brightness(0.4);
         transition: transform 0.3s ease;
@@ -123,7 +119,9 @@
     gap: 20px;
     padding-right: 20px;
     @media (max-width: 768px) {
-      display: none; /* Hide the whole content on mobile */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
 
     .image-container {
@@ -138,8 +136,9 @@
       box-shadow: $box-shadow;
       cursor: pointer;
       @media (max-width: 768px) {
-        display: none; /* Hide image container on mobile */
+        display: none;
       }
+
       .main-image {
         width: 100%;
         height: 100%;
@@ -171,97 +170,65 @@
         object-fit: contain;
       }
     }
-  }
 
-  .notf-btn {
-    width: $height;
-    height: $height;
-    background-color: #262626;
-    border-radius: $border-radius;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: $box-shadow;
-    cursor: pointer;
-    @media (max-width: 768px) {
+    .notf-btn {
+      width: $height;
+      height: $height;
+      background-color: #262626;
+      border-radius: $border-radius;
       display: flex;
-    }
-
-    .notf-icon {
-      width: $icon-size;
-      height: $icon-size;
-      object-fit: contain;
-    }
-  }
-
-  .user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $background-color;
-    border-radius: $border-radius;
-    width: 216px;
-    height: $height;
-    gap: $gap;
-    margin-left: 5px;
-    box-shadow: $box-shadow;
-    cursor: pointer;
-
-    .user-details {
-      display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 4px;
-      padding-left: 3px;
+      box-shadow: $box-shadow;
+      cursor: pointer;
 
-      .user-text {
-        color: #e4e4e7;
-        font-size: 14px;
-        font-weight: 600;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      }
-
-      .user-img {
-        width: $img-size;
-        height: $img-size;
-        border-radius: $border-radius;
-        display: block;
+      .notf-icon {
+        width: $icon-size;
+        height: $icon-size;
+        object-fit: contain;
       }
     }
 
-    // .mobilde-user-img {
-    //   display: none;
-
-    //   @media (max-width: 768px) {
-    //     display: flex;
-    //     width: 30px;
-    //     height: 30px;
-    //     position: absolute;
-    //     right: 15px;
-    //     margin-left: 0;
-    //   }
-    // }
-
-    .img {
-      width: 10px;
-      height: 6px;
+    .user-info {
       display: flex;
-      padding-right: 10px;
-    }
+      justify-content: space-between;
+      align-items: center;
+      background-color: $background-color;
+      border-radius: $border-radius;
+      width: 216px;
+      height: $height;
+      gap: $gap;
+      margin-left: 5px;
+      box-shadow: $box-shadow;
+      cursor: pointer;
 
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
+      .user-details {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding-left: 3px;
 
-  .user-img {
-    display: block;
-    @media (max-width: 768px) {
-      display: flex;
-      width: 30px;
-      height: 30px;
-      margin-left: 0;
-      position: absolute;
-      right: 15px;
+        .user-text {
+          color: #e4e4e7;
+          font-size: 14px;
+          font-weight: 600;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .user-img {
+          width: $img-size;
+          height: $img-size;
+          border-radius: $border-radius;
+          display: block;
+        }
+      }
+
+      .img {
+        width: 10px;
+        height: 6px;
+        display: flex;
+        padding-right: 10px;
+      }
     }
   }
 
@@ -271,19 +238,27 @@
       height: 50px;
     }
 
+    .left-side {
+      display: none;
+    }
+
     .header-content {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      gap: 10px;
+      padding-right: 10px;
     }
 
     .notf-btn,
     .user-info {
-      margin-left: 15px;
+      margin-left: 10px;
     }
 
     .user-img {
       display: block;
+      width: 30px;
+      height: 30px;
+      margin-left: 0;
+      position: absolute;
+      right: 15px;
     }
   }
 </style>

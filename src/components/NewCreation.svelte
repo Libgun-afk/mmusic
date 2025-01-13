@@ -43,6 +43,56 @@
       image:
         "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
     },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
+    {
+      name: "МУСТА Т.Бат-Оч",
+      image:
+        "https://s3-alpha-sig.figma.com/img/3535/aebb/a92d1f352e44b416b8b126a548856e56?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NYbqi-mh3TK~DhSZagh~MlBRtk3~y8Uv8k~ClkQS9PKdM-uMgNJX~TOAbD3LechzqQeYjCCUVUDOFFdw8STO74vZzfsCBSISNhbR9Jc5FOZKAgPmww0HaQhXcOjyrQGfOT5I6RWbjRjCQ-SZh-z5zfAFKULd5Lks14k-PbbRl4bFOFHw~ArwMQDYk-mSDwn8gCVxpLU62n6aUjuFoFnjAAUWHyaAhU3N4ob52nNVL4rIROro96tIpLVoCVJ3aY7BJhd9GdLZ5ThROIR81aJDlFUXMCTaUJYxzVNZEA0FMDgFDTM~mRROY41-h9j9yxKADrQxU5VezxIMam4cMETJBg__",
+    },
   ];
 </script>
 

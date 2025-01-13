@@ -14,6 +14,9 @@
   <NewHot />
   <NewCreation />
   <NewArtist />
+  <NewArtist />
+  <NewArtist />
+  <NewArtist />
 </div>
 
 <style>
